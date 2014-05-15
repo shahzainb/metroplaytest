@@ -16,6 +16,8 @@ Steps Taken:
 10. Fix IE8 styles (20 minutes)
 11. Add images to the json file (3 minutes)
 
+Total Time: 2 hours and 4 minutes. This doesn't include some small fixes that I did after the fact such as writing this notes and small typo fixes. These can be followed on the commit history.
+
 ## Reasoning
 
 The reason I used NodeJs and AngularJs is to create a proper application structure that is scalable and maintainable.
