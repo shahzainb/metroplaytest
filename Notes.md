@@ -1,7 +1,5 @@
 ## Test Notes
 
----
-
 Steps Taken:
 
 1. Create a new Nodejs and Express App (10 minutes)
@@ -19,8 +17,6 @@ Steps Taken:
 11. Add images to the json file (3 minutes)
 
 ## Reasoning
-
----
 
 The reason I used NodeJs and AngularJs is to create a proper application structure that is scalable and maintainable.
 
