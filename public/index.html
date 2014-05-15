@@ -25,15 +25,15 @@
     <section class="home-section" data-ng-controller="HomeController">
 
         <div class="logo">
-            <img src="images/MP-logo-420x164.png" alt="Metro Play Logo" title="Metro Play Logo" />
+            <img data-ng-src="{{viewModel.metroData.metroPlayLogo}}" alt="Metro Play Logo" title="Metro Play Logo" />
         </div>
 
         <div class="game-logo pure-hidden-desktop">
-            <img src="images/game.jpg" alt="Enchanted Meadow" title="Enchanted Meadow" />
+            <img data-ng-src="{{viewModel.metroData.gameImageSrc}}" alt="Enchanted Meadow" title="Enchanted Meadow" />
         </div>
 
         <div class="game-logo large-game-logo pure-hidden-phone pure-hidden-tablet">
-            <img src="images/game.jpg" alt="Enchanted Meadow" title="Enchanted Meadow" />
+            <img data-ng-src="{{viewModel.metroData.gameImageSrc}}" alt="Enchanted Meadow" title="Enchanted Meadow" />
         </div>
 
         <article class="content">
