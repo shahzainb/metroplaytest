@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Metro Play Test</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+    <link href="stylesheets/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">
+    <link href="stylesheets/style.css" rel="stylesheet" />
+
+    <!--[if lt IE 9]>
+    <link href="stylesheets/ie8-fixes.css" rel="stylesheet" />
+    <script src="javascripts/respond.min.js"></script>
+    <script src="javascripts/html5shiv.min.js"></script>
+    <script src="javascripts/placeholders.min.js"></script>
+    <![endif]-->
+</head>
+
+<body data-ng-app="MetroPlayTestApp">
+
+    <div class="container"></div>
+
+    <section class="home-section" data-ng-controller="HomeController">
+
+        <div class="logo">
+            <img src="images/MP-logo-420x164.png" alt="Metro Play Logo" title="Metro Play Logo" />
+        </div>
+
+        <div class="game-logo pure-hidden-desktop">
+            <img src="images/game.jpg" alt="Enchanted Meadow" title="Enchanted Meadow" />
+        </div>
+
+        <div class="game-logo large-game-logo pure-hidden-phone pure-hidden-tablet">
+            <img src="images/game.jpg" alt="Enchanted Meadow" title="Enchanted Meadow" />
+        </div>
+
+        <article class="content">
+            <p>{{viewModel.metroData.paragraph1}}</p>
+            <p>{{viewModel.metroData.paragraph2}}</p>
+            <p>{{viewModel.metroData.paragraph3}}</p>
+        </article>
+
+        <form class="pure-form pure-form-stacked" action="" name="initiateGame" data-ng-submit="viewModel.playGame()" role="form">
+            <fieldset>
+
+                <div class="pure-g-r">
+                    <div class="pure-u-1-2 stack-fix">
+                        <input class="center" type="text" placeholder="Name" data-ng-required="true" />
+                    </div>
+
+                    <div class="pure-u-1-2 stack-fix">
+                        <input class="center" type="email" placeholder="Email" data-ng-required="true" />
+                    </div>
+                </div>
+
+                <button type="submit" class="pure-button pure-button-primary">Play</button>
+            </fieldset>
+        </form>
+
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="javascripts/app.js"></script>
+    <script src="javascripts/controllers/homeController.js"></script>
+    <script src="javascripts/services/homeService.js"></script>
+</body>
+
+</html>
