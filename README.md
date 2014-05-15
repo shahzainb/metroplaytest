@@ -2,7 +2,7 @@
 
 Prerequisites: NodeJs installed on the computer.
 
-To being, run
+To begin, run
 
     npm install
 
